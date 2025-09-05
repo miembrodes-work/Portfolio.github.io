@@ -3,17 +3,80 @@ main {
     min-height: calc(100% - 120px); /* Adjust based on header and footer height */
     background: radial-gradient(ellipse at top, #00c0c0, transparent),
                 radial-gradient(ellipse at bottom, #4d9f0c, transparent);
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.sub-container {
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 80%;
+}
+
+#Skills{
+    background-color: transparent;
+    box-shadow: none;
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 0;
+}
+
+#Skills div {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+}
+
+#Skills ul {
+    padding: 0;
+}
+
+#Skills li {
+    display: inline-block;
+    padding: 5px;
+    margin: 3px 0px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#Profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+}
+
+.profile-pic {
+    text-align: right;
+    align-content: end;
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #333;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h2 {
+    margin: 10px;
+    font-size: 2em;
+    color: #333;
 }
