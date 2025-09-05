@@ -1,0 +1,19 @@
+main {
+    padding: 20px;
+    min-height: calc(100% - 120px); /* Adjust based on header and footer height */
+    background: radial-gradient(ellipse at top, #00c0c0, transparent),
+                radial-gradient(ellipse at bottom, #4d9f0c, transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    display: grid;
+}
